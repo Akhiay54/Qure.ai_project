@@ -60,7 +60,7 @@ ROOT_URLCONF = 'testsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/oem/qure.ai/qureonboarding101/qAPI/testsite/template'],
+        'DIRS': [ os.path.join(os.path.dirname(__file__) ,'../template').replace('\\','/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
