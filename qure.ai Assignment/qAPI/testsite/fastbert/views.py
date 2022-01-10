@@ -78,16 +78,16 @@ def call_model(request) :
     if request.method == 'POST' and request.FILES['myfile']:
 
             image = request.FILES.get('myfile') 
-            print(image)
+            
             image = image_converstion(image)
-            print(image)
+            
             prediction = prediction_function(image)
-            print(prediction)
+            
 
             answer = helper(prediction)
         
             return render(request, "result.html", {'val1':answer[0] , 'val2':answer[1] } )
 
     else :
-       return HttpResponse("else temp response")
+       return HttpResponse("BAD Request")
 
