@@ -1,8 +1,0 @@
-version: "3.3"
-services:
-  backend:
-    # image: qbackend_1
-    build: ./qAPI/testsite/
-    ports :
-        - 8000:8000
-    
