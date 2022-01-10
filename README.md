@@ -9,7 +9,7 @@ web application which take picture and return the prediction label for image fro
 
 How do I get set up?
 
-$ git clone https://rohit_chouhan@bitbucket.org/rohit_chouhan/qureonboarding101.git
+$ git clone https://github.com/Akhiay54/Qure.ai_project.git
 
 $ docke-compose up
 
