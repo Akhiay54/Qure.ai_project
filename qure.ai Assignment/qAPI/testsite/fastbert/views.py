@@ -17,8 +17,8 @@ from django.views.decorators.csrf import csrf_exempt
 def image_converstion(image):
     #  ""
     # args : image
-    # use : convertin binary form
-    # reutrn : binary object
+    # use : convert each pixel to its corresponding 8 bit value
+    # reutrn : 8 bit value object/image
     # """
             tupel_val = tempfile.mkstemp() 
             f = os.fdopen(tupel_val[0], 'wb')
